@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "name": "migrated_help_center_csr_fe",
+  "version": "1.0.0",
+  "description": "The migrated open-source version of a certain Help Center CSR FE",
+  "main": "index.js",
+  "scripts": {
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "preview": "node ./server.js",
+    "serve": "remix-serve build/server/index.js"
+  },
+  "author": "CitruXonve",
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {
+    "@remix-run/node": "^2.16.0",
+    "@remix-run/react": "^2.16.0",
+    "@remix-run/serve": "^2.16.0",
+    "isbot": "^4.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.16.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "vite": "^6.2.0"
+  }
+}
