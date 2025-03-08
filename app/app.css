@@ -8,19 +8,21 @@ body {
   display: flex;
 }
 
-#sidebar {
+.sidebar {
   width: fit-content;
   background-color: #f4f4f4;
-  padding: 12px;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-#sidebar .sidebar-search {
+.sidebar .sidebar-search {
   display: inline-flex;
   vertical-align: top;
-  margin: 16px 8px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  margin-left: 16px;
+  margin-right: 16px;
   column-gap: 10px;
 }
 
@@ -64,12 +66,25 @@ button {
 
 button:hover {
   background-color: #0056b3;
+  background-color: gray;
+}
+
+.sidebar > .sidebar-divider {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.sidebar-nav {
+  flex: 1;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: auto; /* Push the other rows to the bottom */
 }
 
 nav ul.sidebar-list {
   list-style-type: none;
   padding: 0;
-  margin: 16px 12px;
 }
 
 nav li.sidebar-list-item {
@@ -88,13 +103,21 @@ nav a:hover {
   text-decoration: underline;
 }
 
-#badge {
-  margin-top: auto; /* Push it to the bottom */
-  color: rgba(0, 0, 0, 0.7);
+.sidebar-badge {
+  display: inline-flex;
   font-weight: 800;
-  padding-top: 10px;
+  column-gap: 4px;
   margin-left: 16px;
   margin-right: 16px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar-badge > img {
+  height: 1.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 #content {

@@ -19,7 +19,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div id="sidebar">
+        <div className="sidebar">
           <div className="sidebar-search">
             <Form id="search-form" role="search">
               <label className="fas fa-search search-input-icon"></label>
@@ -40,7 +40,8 @@ export default function App() {
               <button type="submit" disabled>New</button>
             </Form>
           </div>
-          <nav>
+          <hr className="sidebar-divider" />
+          <nav className="sidebar-nav">
             <ul className="sidebar-list">
               <li className="sidebar-list-item">
                 <a href="#">Your Name</a>
@@ -50,7 +51,9 @@ export default function App() {
               </li>
             </ul>
           </nav>
-          <div id="badge">
+          <hr className="sidebar-divider" />
+          <div className="sidebar-badge">
+            <img src="https://remix.run/_brand/remix-letter-glowing.svg" />
             <h4>Remix Contacts</h4>
           </div>
         </div>
